@@ -21,5 +21,8 @@ public class TestSelenium01 {
         FirefoxDriver driver1 = new FirefoxDriver();
         driver1.get("https://thetestingacademy.com");
         driver1.close();
+
+        FirefoxDriver driver2 = new FirefoxDriver();
+        driver2.get("https://www.msn.com/en-in");
     }
 }
