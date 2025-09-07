@@ -61,11 +61,11 @@ public class TestSelenium20_MiniProject_OrangeHRM extends CommonToAll{
 
         closebrowser(driver);
 
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
         //Two things in Explicit Wait
-        //1. First max time duration-ex:10 seconds-Duration.ofSeconds(10)
+        //1. First max time duration-ex:4 seconds-Duration.ofSeconds(4)
         //2. Condition ? ExpectedConditions.
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("notification-box-description")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()=\"Dashboard\"]")));
 
     }
 
