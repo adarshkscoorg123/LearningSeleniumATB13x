@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex_03_Selenium_Locators;
+package com.thetestingacademy.ex_06_Input_Select_Alerts_Radio_checkbox;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,8 +42,14 @@ public class TestSelenium_radio_checkbox {
         WebElement female1 = driver.findElement(By.xpath("//input[@id=\"sex-1\"]"));
         female1.click();
 
+        WebElement radio = driver.findElement(By.xpath("//input[@id=\"exp-1\"]"));
+        radio.click();
+
         WebElement profession = driver.findElement(By.xpath("//input[@id=\"profession-1\"]"));
         profession.click();
+
+        WebElement tools = driver.findElement(By.xpath("//input[@id=\"tool-2\"]"));
+        tools.click();
 
         try {
             Thread.sleep(2000);
