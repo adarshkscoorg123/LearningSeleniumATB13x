@@ -21,10 +21,10 @@ public class Lab_42_ShadowDom_JS {
         //driver.findElement(By.id("pizza")).sendKeys("farmhouse");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector(\"div#app2\").shadowRoot.querySelector(\"#pizza\")");
-        //WebElement concept_test = (WebElement) js.executeScript("return //document.querySelector(\"div#userName\").shadowRoot.querySelector(\"div#concepts\").shadowRoot.querySelector(\"#Concept Test\")");
+        WebElement userName = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector(\"input#kils\")");
 
         inputboxPizza.sendKeys("Dominoz_Mushroom");
-        //concept_test.sendKeys("Adarsh");
+        userName.sendKeys("Adarsh");
 
 
     }
