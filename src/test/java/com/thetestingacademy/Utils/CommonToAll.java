@@ -13,7 +13,7 @@ public class CommonToAll {
         driver.manage().window().maximize();
     }
 
-    public void closebrowser(WebDriver driver){
+    public static void closebrowser(WebDriver driver){
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {

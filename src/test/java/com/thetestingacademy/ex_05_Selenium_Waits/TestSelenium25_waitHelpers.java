@@ -18,6 +18,7 @@ public class TestSelenium25_waitHelpers extends CommonToAll {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.makemytrip.com/");
         driver.manage().window().maximize();
+        System.out.println(driver.getTitle());
 
         new WaitHelpers().waitForVisibility(driver,"//span[@data-cy=\"closeModal\"]",5);
 
