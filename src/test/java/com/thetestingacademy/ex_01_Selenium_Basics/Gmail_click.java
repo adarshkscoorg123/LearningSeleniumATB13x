@@ -14,6 +14,8 @@ public class Gmail_click {
         driver.manage().window().maximize();
 
         WebElement gmail = driver.findElement(By.linkText("Images"));
+        String attribute = gmail.getAttribute("class");
+        System.out.println(attribute);
         gmail.click();
     }
 }
