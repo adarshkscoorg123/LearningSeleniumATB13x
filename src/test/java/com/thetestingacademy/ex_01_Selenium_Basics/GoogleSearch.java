@@ -23,5 +23,7 @@ public class GoogleSearch {
         searchBox.sendKeys("Mysuru");
 
         searchBox.sendKeys(Keys.ENTER);
+
+
     }
 }

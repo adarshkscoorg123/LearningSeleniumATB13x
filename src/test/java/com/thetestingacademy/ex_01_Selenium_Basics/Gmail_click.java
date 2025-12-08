@@ -17,5 +17,12 @@ public class Gmail_click {
         String attribute = gmail.getAttribute("class");
         System.out.println(attribute);
         gmail.click();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.close();
     }
 }
