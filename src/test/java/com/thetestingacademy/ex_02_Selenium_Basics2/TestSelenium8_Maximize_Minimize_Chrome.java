@@ -19,6 +19,8 @@ public class TestSelenium8_Maximize_Minimize_Chrome {
         Thread.sleep(5000);
         driver.manage().window().minimize();
         Thread.sleep(5000);
+        driver.manage().window().maximize();
+        Thread.sleep(5000);
         driver.quit();
     }
 }

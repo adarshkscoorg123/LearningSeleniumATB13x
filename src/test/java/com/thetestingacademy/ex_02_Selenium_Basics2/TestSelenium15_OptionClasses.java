@@ -11,8 +11,9 @@ public class TestSelenium15_OptionClasses {
         ChromeOptions chromeOptions = new ChromeOptions();
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--window-size=600,800");
-        //chromeOptions.addArguments("--start-maximized");
+
         chromeOptions.addArguments("--incognito");
+        chromeOptions.addArguments("--start-maximized");
 
 
         //So we have FireFox options,Chrome options,Edge options, Safari options

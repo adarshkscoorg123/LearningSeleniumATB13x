@@ -7,6 +7,7 @@ public class TestSelenium5 {
     public static void main(String[] args) {
         WebDriver driver = new EdgeDriver();
         driver.get("https://app.vwo.com");
+        driver.quit();
     }
 
 }
