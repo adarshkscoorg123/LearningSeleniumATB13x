@@ -33,8 +33,8 @@ public class TestSelenium19_Mini_Project2_TagName extends CommonToAll {
         email.sendKeys("abc");
 
 
-        WebElement buttondisabled = driver.findElement(By.xpath("//button[contains(text(),\"Create a Free Trial Account\")]"));
-        System.out.println(buttondisabled.isEnabled());
+        WebElement buttonDisabled = driver.findElement(By.xpath("//button[contains(text(),\"Create a Free Trial Account\")]"));
+        System.out.println(buttonDisabled.isEnabled());
 
         WebElement checkbox_policy = driver.findElement(By.name("gdpr_consent_checkbox"));
         System.out.println(checkbox_policy.isSelected());
