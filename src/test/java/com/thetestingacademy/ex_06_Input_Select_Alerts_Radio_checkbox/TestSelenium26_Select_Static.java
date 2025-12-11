@@ -29,7 +29,7 @@ public class TestSelenium26_Select_Static {
         select.selectByVisibleText("Option 1");
         Thread.sleep(4000);
         select.selectByIndex(2);
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         driver.close();
     }

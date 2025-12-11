@@ -51,7 +51,7 @@ public class TestSelenium20_MiniProject_OrangeHRM extends CommonToAll{
 
         //Thread.sleep(4000);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()=\"Dashboard\"]")));
 
         //h6[text()="PIM"]
@@ -68,7 +68,5 @@ public class TestSelenium20_MiniProject_OrangeHRM extends CommonToAll{
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()=\"Dashboard\"]")));
 
     }
-
-
 
 }

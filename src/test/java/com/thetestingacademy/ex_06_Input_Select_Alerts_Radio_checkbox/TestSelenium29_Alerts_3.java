@@ -40,6 +40,11 @@ public class TestSelenium29_Alerts_3 {
         }
 
         alert.sendKeys("Sairam");
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         alert.accept();
 
         WebElement text= driver.findElement(By.xpath("//p[@id=\"result\"]"));

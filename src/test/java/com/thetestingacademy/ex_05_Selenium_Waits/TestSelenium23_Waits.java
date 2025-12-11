@@ -7,7 +7,7 @@ import java.time.Duration;
 
 public class TestSelenium23_Waits {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -16,6 +16,7 @@ public class TestSelenium23_Waits {
         driver.get("https://app.vwo.com");
 
 
+        Thread.sleep(4000);
         driver.close();
         //e1,e2,e3
 

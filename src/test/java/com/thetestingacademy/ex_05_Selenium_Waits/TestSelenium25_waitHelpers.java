@@ -27,9 +27,6 @@ public class TestSelenium25_waitHelpers extends CommonToAll {
 
         closebrowser(driver);
 
-
-
-
     }
 
 

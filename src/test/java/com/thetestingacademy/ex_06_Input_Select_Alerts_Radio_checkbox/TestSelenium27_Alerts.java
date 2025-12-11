@@ -28,6 +28,7 @@ public class TestSelenium27_Alerts extends CommonToAll {
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         System.out.println(driver.getTitle());
         driver.manage().window().maximize();
+        Thread.sleep(4000);
 
         WebElement jsAlert = driver.findElement(By.xpath("//button[contains(text(),\"Click for JS Alert\")]"));
         jsAlert.click();
