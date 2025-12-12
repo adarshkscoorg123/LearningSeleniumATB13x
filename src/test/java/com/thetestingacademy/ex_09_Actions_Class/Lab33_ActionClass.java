@@ -19,20 +19,17 @@ public class Lab33_ActionClass extends CommonToAll {
 
         WebElement source = driver.findElement(By.xpath("//div[@data-testid=\"to-testID-origin\"]/div/div/input"));
 
+        WebElement destination = driver.findElement(By.xpath("//div[@data-testid=\"to-testID-destination\"]/div/div/input"));
+
         Actions actions = new Actions(driver);
         // move to element
         //click
         //sendkeys-BLR
 
-        WebElement destination = driver.findElement(By.xpath("//div[@data-testid=\"to-testID-destination\"]/div/div/input"));
-
-
         actions.moveToElement(source).click().sendKeys("Ahm").build().perform();
         actions.moveToElement(destination).click().sendKeys("Shirdi").build().perform();
 
         actions.contextClick(source).build().perform();
-
-
 
     }
 }

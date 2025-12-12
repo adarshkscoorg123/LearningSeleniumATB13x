@@ -17,9 +17,14 @@ public class Lab34_Action_Keyboard {
 
         WebElement firstName = driver.findElement(By.name("firstname"));
 
+        WebElement lastName = driver.findElement(By.name("lastname"));
+
         Actions actions = new Actions(driver);
 
         actions.keyDown(Keys.SHIFT).sendKeys(firstName,"the testing academy")
                 .keyUp(Keys.SHIFT).build().perform();
+
+        actions.moveToElement(lastName).click().sendKeys("Pramod").build().perform();
+
     }
 }

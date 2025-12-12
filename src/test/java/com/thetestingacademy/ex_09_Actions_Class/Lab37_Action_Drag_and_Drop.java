@@ -32,6 +32,12 @@ public class Lab37_Action_Drag_and_Drop {
 
         actions.dragAndDrop(from_Drag,to_Drop).build().perform();
 
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         driver.close();
     }
 }
